@@ -33,22 +33,12 @@ body{
     animation-direction: alternate;
 }
 
-#entrar-em-contato:hover{
+.entrar-em-contato:hover{
     animation-name: anima;
     animation-duration: 0.5s;
     animation-timing-function: ease-in-out;
     animation-iteration-count: infinite;
     animation-direction: alternate;
-}
-a#infos:hover{
-    animation-name: anima;
-    animation-duration: 0.5s;
-    animation-timing-function: ease-in-out;
-    animation-iteration-count: infinite;
-    animation-direction: alternate;
-}
-a#infos{
-    background-color: red;
 }
 img{
     max-width: 100%;
@@ -90,7 +80,7 @@ h1{
 }
 h3{
     margin-top: 15px;
-    font-weight: 300;
+    font-weight: 600;
     font-size: 15px;
     cursor: default;
 }
@@ -109,6 +99,31 @@ p{
     font-weight: 350;
 
 
+}
+span.material-symbols-outlined{
+    font-size: 40px;
+}
+.material-symbols-outlined{
+    position: fixed;
+    bottom: 120px;
+    right: 30px;
+    background-color: #01e675;
+    color: #000000;
+    border-radius: 50%;
+    padding: 3px;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    text-decoration: none;
+    z-index: 100;
+    padding-top: 5px;
+
+}
+.material-symbols-outlined:hover{
+    background-color: #ffffff;
+    color: #029e3b;
+    font-weight: 900;
+    box-shadow: 2px 2px 20px #5fe690;
 }
 .icon{
     position: fixed;
@@ -143,11 +158,12 @@ p{
     text-align: center;
 }
 #imoveis > div a{
-    background-color: #029e3b;
+    background-color: #9e0202;
     color: white;
     display: flex;
     margin: 9px 15px;
     border-radius: 10px;
+    padding: 10px;
     justify-content: center;
     
 }
@@ -163,6 +179,24 @@ ul{
     list-style-type: none;
     
 
+}
+.botoes_social{
+    display: none;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    background-color: transparent;
+}
+button{
+    background-size: cover;
+    background: transparent;
+    margin: center;
+    padding: 0px;
+    text-decoration: none;
+    padding: 10px 8px;
+    border: transparent;
+    user-select: none;
+    cursor: pointer;
 }
 a
 li a{
@@ -276,6 +310,7 @@ h1{
     }
 #imoveis img{
     cursor: zoom-in;
+    border-radius: 20px;
 }
 @media screen and (max-width:1200px){
     #imoveis{
@@ -292,6 +327,13 @@ h1{
         width: 100%;
         
 
+    }
+    .botoes_social{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-decoration: none;
+        background-color: transparent;
     }
     .container{
         display: flex;
