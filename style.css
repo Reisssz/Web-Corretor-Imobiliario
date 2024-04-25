@@ -17,63 +17,12 @@ body{
     color: rgb(0, 0, 0);
     
 }
-#eu-quero-um-imovel{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-#parte_de_cima{
+.parte_de_cima{
     display: flex;
     width: 100%;
     justify-content: center;
     
     align-items: center;
-    
-}
-#Nobrega{
-   display: flex;
-   justify-content: center;
-   width: 1200px;
-   padding: 200px;
-   
-
-}
-#logo span{
-    color: #272727;
-    padding: 5px;
-    font-size: 15px;
-    font-family: "Poppins", sans-serif;
-    font-weight: 500;
-
-}
-#parte_de_cima ul{
-    display: flex;
-    font-weight: 200;
-    align-items: center;
-    justify-content: space-between;
-    padding: 20px;
-    width: 1700px;
-}
-#parte_de_cima ul li{
-    list-style: none;
-    padding: 0;
-    font-size: 50px;
-    font-family: "Platypi", serif;
-    font-weight: 100;
-}
-#parte_de_cima ul li a{
-    font-size: 18px;
-    font: bold;
-    color: rgb(0, 0, 0);
-    font-weight: 500;
-
-}
-#parte_de_cima ul li a#link{
-    background-color: #ff0000;
-    color: #ffffff;
-    display: flex;
-    padding: 15px;
-    border-radius: 15px;
     
 }
 #link:hover{
@@ -90,6 +39,16 @@ body{
     animation-timing-function: ease-in-out;
     animation-iteration-count: infinite;
     animation-direction: alternate;
+}
+a#infos:hover{
+    animation-name: anima;
+    animation-duration: 0.5s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+a#infos{
+    background-color: red;
 }
 img{
     max-width: 100%;
@@ -131,7 +90,7 @@ h1{
 }
 h3{
     margin-top: 15px;
-    font-weight: 500;
+    font-weight: 300;
     font-size: 15px;
     cursor: default;
 }
@@ -151,8 +110,40 @@ p{
 
 
 }
+.icon{
+    position: fixed;
+    bottom: 60px;
+    right: 30px;
+    font-size: 30px;
+    background-color: #01e675;
+    color: #000000;
+    border-radius: 50%;
+    padding: 3px;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    text-decoration: none;
+    z-index: 100;
+    
+}
+.icon .fab{
+    padding-top: 7px;
+}
+.icon:hover{
+    background-color: #ffffff;
+    color: #029e3b;
+    font-weight: 900;
+    box-shadow: 2px 2px 20px #5fe690;
+}
+#Direitos-reservados{
+    color: rgb(0, 0, 0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
 #imoveis > div a{
-    background-color: #03A300;
+    background-color: #029e3b;
     color: white;
     display: flex;
     margin: 9px 15px;
@@ -160,13 +151,27 @@ p{
     justify-content: center;
     
 }
-
-#parte_de_cima ul li #icon-wpp{
+nav{
     display: flex;
-    
-    
+    justify-content: center;
+    background-repeat: repeat;
 }
-#img-principal{
+ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style-type: none;
+    
+
+}
+a
+li a{
+    padding: 100px 0px 0px 800px;
+    list-style: none;
+    text-decoration: none;
+
+}
+.img-principal{
     width: 100%;
     height: 100%;
     size: 100px;
@@ -174,16 +179,93 @@ p{
     border-radius: 30px;
     
 }
-section #img-principal{
+section .img-principal{
     display: flex;
     justify-content: center;
 }
-section #parte_cima{
+section #parte_de_cima{
     display: flex;
     justify-content: center;
 }
+.png-logo{
+    width: 300px;
+    height: 300px;
+    background-color: transparent;
+}
+.footer{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    color: rgb(255, 255, 255);
+    font-weight: 100;
+    background-repeat: no-repeat;
+    background-image: url(/imgs/Logo-Mockup-on-panel-wall.png);
+}
+header{
+    background-image: url(/imgs/Logo-Mockup-on-panel-wall.png);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
 
+}
+span#burguer{
+    color: rgb(255, 255, 255);
+    display: none;
+    justify-content: center;
+    text-align: center;
+    padding: 10px;
+    background-color: transparent;
 
+}
+span#burguer:hover{
+    color:#03A300
+}
+main .rodape__{
+    color: #fff;
+    position: relative;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    font-size: 1.8rem;
+    padding: 50px;
+}
+menu{
+    display: none;
+}
+#rodape{
+    display: flex;
+    justify-content: center;
+    font-size: 20px;
+    font-weight: 600;
+    padding-top: 20px;
+    padding-bottom: 50px;
+    color: white;
+    font-family: "Poppins", sans-serif;
+    background-image: url(/imgs/Logo-Mockup-on-panel-wall.png);
+}
+.rodape__{
+    padding: 0px 300px 0px 0px;
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    align-items: center;
+}
+li{
+    display: block;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    padding: 10px;
+}
+h2{
+    font-weight: 300;
+}
+h1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-weight: 700;
+}
 @keyframes anima {
     0%{
         transform: scale(1);
@@ -191,7 +273,7 @@ section #parte_cima{
     100%{
         transform: scale(1.05);
     }
-}
+    }
 #imoveis img{
     cursor: zoom-in;
 }
@@ -218,20 +300,49 @@ section #parte_cima{
         align-items: center;
         text-align: center;
     }
-    #img-principal{
+    .img-principal{
         width: 100%;
         height: 100%;
         display: flex;
         justify-content: center;
     }
-    #parte_de_cima ul{
-        display: block;
+    #rodape{
+        display: none;
+    }
+    .png-logo{
+        width: 200px;
+        height: 200px;
+        display: flex;
+    }
+    .eu-quero-um-imovel{
+        display: none;
+    }
+    .parte_de_cima ul{
+        display: flex;
         font-weight: 200;
         align-items: center;
         justify-content: space-between;
-        padding: 20px;
-
-  
+        padding: 0px 0px 0px 70px;
+    }
+    section .parte_de_cima{
+        justify-content: space-between;
+        display: flex;
+    }
+    ul{
+        display: none;
+        
+    }
+    header{
+        display: flex;
+        justify-content: center;
+        padding: 0px 0px 0px 0px;
+    }
+    span#burguer{
+        display: block;
+        justify-content: center;
+        align-items: center;
+        margin: 0px 0px 150px;
+        color: rgb(255, 255, 255)
     }
     
 }
