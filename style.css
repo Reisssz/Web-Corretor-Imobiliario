@@ -40,6 +40,7 @@ body{
     animation-timing-function: ease-in-out;
     animation-iteration-count: infinite;
     animation-direction: alternate;
+    box-shadow: #01e675 2px 2px 15px;
 }
 .btn-contato{
     color: #ff0000;
@@ -72,8 +73,49 @@ img.img{
     transition: 0.5s;
     border-radius: 5px;
 }
+.tipos-imoveis{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.tipos-imoveis li  .tipos{
+    color: black;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin: 20px;
+    background-color:#25d366;
+    border-radius: 15px;
+    font-weight: 600;
 
-
+}
+.tipos{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+.tipos-imoveis li a:hover{
+    animation-name: anima;
+    animation-duration: 0.5s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    box-shadow: #01e675 2px 2px 15px;
+}
+.tipos-imoveis li{
+    text-decoration: none;
+    list-style-type: none;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
 img{
     max-width: 100%;
     justify-content: center;
@@ -492,6 +534,19 @@ a{
         align-items: center;
         justify-content: center;
         margin-left: 100px;
+    }
+    .tipos-imoveis li .tipos{
+        color: black;
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        padding: 15px;
+        margin: 10px;
+        border-radius: 25px;
+    }
+    .tipos-imoveis li{
+        padding: 0;
     }
     .logo{
         width: 300px;
